@@ -18,7 +18,8 @@
                 quantity: 6,
             }
             
-            let total = product.price + product.quantity;
+            let total = product.price * product.quantity;
+            document.getElementById("display").textContent = "Hi you have" + "$ " + total;
             console.log(total);
         }
 
