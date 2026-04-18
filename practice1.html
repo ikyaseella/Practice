@@ -7,23 +7,18 @@
 </head>
 <body>
 
-    <h2>Practicing function examples on Javascript</h2>
-    <button onclick="calculateTotal()">Calculate Total</button>
-    <p id ="display"> Hi you have </p>
-    <script>
-        function calculateTotal(){
-            let product = {
-                name: "Tecno Spark",
-                price: 5000,
-                quantity: 6,
-            }
-            
-            let total = product.price * product.quantity;
-            document.getElementById("display").textContent = "Hi you have" + "$ " + total;
-            console.log(total);
+    <!-- using the Dom for manipulation -->
+        <h4>I am going to use the dom to manipulate the paragraph below simply by clicking on  the "change paragraph button"</h4>
+        <p id="changePara">I will graduate and build a beautiful project from Agility Amen</p>
+        <button onclick="change()">change paragraph </button>
+        
+
+     <script>
+        function change(){
+            document.getElementById("changePara").innerText="Amen"
         }
 
-    </script>
+     </script>
     
 </body>
 </html>
