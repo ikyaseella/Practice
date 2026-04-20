@@ -9,7 +9,14 @@
     <h2>lets shine the bulb</h2>
     <img src="./download.jpeg" alt="" id="change">
     <img src="./light.jpeg" alt="" onclick="this.src='./download.jpeg';">
-    <p id="change">shine</p>
-    <button onclick="document.getElementById('change').src='./light.jpeg'">shine</button>
+    <p id="text">its off</p>
+    <button  onclick="text()" >shine</button>
+    <script>
+        function text(){
+            const text = document.getElementById("text").innerHTML="its on";
+            const button = document.getElementById("change").src='./light.jpeg';
+        }
+
+    </script>
 </body>
 </html>
